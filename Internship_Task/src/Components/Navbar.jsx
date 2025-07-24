@@ -17,7 +17,7 @@ function Navbar() {
       </button>
       {!token?<p  onClick={()=>{setHide(false);navigate("/signup")}} >Create account. <span className='text-blue-800 cursor-pointer font-bold'>It's free!</span> </p>
       :<>
-       <button className='flex flex-row'><img src="" alt="" />
+       <button className='flex flex-row'><img src={assets.profile}  className='rounded-full w-10 h-10' alt="image" />
        <span>{user}</span>
        <img src={assets.options} onClick={()=>setHidden(!hidden)} className='w-4 h-4 cursor-pointer' alt="" />
        </button>

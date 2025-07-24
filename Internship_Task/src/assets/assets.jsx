@@ -23,6 +23,10 @@ import car from '../assets/car.jpeg';
 import meeting from '../assets/meeting.jpeg';
 import calendar from '../assets/calendar.png';
 import job from '../assets/suitcase.png';
+import profile from '../assets/profile.jpeg';
+import profile1 from '../assets/profile1.jpeg';
+import profile2 from '../assets/profile2.jpeg';
+import profile3 from '../assets/profile3.jpeg';
 
 const groupData=[
     {
@@ -49,7 +53,7 @@ const postData=[
         title:"Article",
         heading:"What if famous brandshad regular fonts?Meet RegulaBrands!",
         description:"I've worked in UXfor the better part of decade.From now on,I p;an to...",
-        user_profile:"",
+        user_profile:profile,
         username:"Sarthak Kamra",
         views:"1.4k",
         date:"",
@@ -63,7 +67,7 @@ const postData=[
         title:"Education",
         heading:"Tax Benefits for Investment under National Pension Scheme launched by Government",
         description:"I've worked in UXfor the better part of decade.From now on,I p;an to...",
-        user_profile:"",
+        user_profile:profile1,
         username:"Sarah West",
         views:"1.4k",
         date:"",
@@ -77,7 +81,7 @@ const postData=[
         title:"MeetUp",
         heading:"Finance and Investment Elite Social Mixer @Lujiazui",
         description:"",
-        user_profile:"",
+        user_profile:profile2,
         username:"Ronal Jones",
         views:"",
         date:"",
@@ -91,7 +95,7 @@ const postData=[
         title:"Job",
         heading:"Software Developer",
         description:"",
-        user_profile:"",
+        user_profile:profile3,
         username:"Joseph Gray",
         views:"1.4k",
         date:"",
@@ -105,5 +109,5 @@ const postData=[
 
 export const assets={
     banner,cross_icon,view,facebook,google,horizontaldots,like,logo,map,search,authLogo,verticaldots,remove
-    ,options,groupicon,groupData,share,postData,calendar,job
+    ,options,groupicon,groupData,share,postData,calendar,job,profile,profile1,profile2,profile3
 }

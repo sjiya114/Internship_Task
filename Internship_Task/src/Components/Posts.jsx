@@ -66,7 +66,7 @@ function Posts() {
 
          <div className='flex flex-row justify-between'>
           <div className='flex flex-row space-x-4'>
-             <img src={data.user_profile} alt="" />
+             <img src={data.user_profile} className='rounded-full w-10 h-10' alt="" />
            <p className='font-bold' >{data.username}</p>
           </div>
           <div className='flex flex-row space-x-2'>
