@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 import Groups from '../pages/Groups'
 import { AppContext } from '../context/AppContext'
 function Posts() {
-  const {filter}=useContext(AppContext);
+  const {filter,token}=useContext(AppContext);
   const [post,setPost]=useState(assets.postData);
   const [show,setShow]=useState(false);
   const filteredOne=()=>
@@ -23,10 +23,10 @@ function Posts() {
   },[filter])
 
   return (
-     <div className='flex flex-col space-y-4 w-full  mx-auto'>
-        {post.map((data,index)=>(<div key={index}  className='w-[60%] max-md:w-full max-md:mx-0 max-md:px-0  h-fit flex flex-col space-y-2  rounded-lg border-2 border-gray-400  ' >
+     <div className='flex flex-col space-y-4 w-full mx-auto'>
+        {post.map((data,index)=>(<div key={index}  className={` ${!token?'w-[40%]':'w-[60%]'}  shadow-2xl hover:scale-105  shadow-blue-950  max-md:w-full max-md:mx-4 max-md:px-0  h-fit flex flex-col space-y-4  rounded-lg border-2 border-gray-400 `}>
        <div className='w-full'>
-        {data.bannerImage && <img src={data.bannerImage} className='w-full  h-60 ' alt="" />}
+        {data.bannerImage && <img src={data.bannerImage} className='w-full  h-60 shadow-2xl shadow-white ' alt="" />}
        </div>
        <div className='flex flex-col space-y-3 px-2 py-2'>
         <div className='flex flex-row space-x-4'>

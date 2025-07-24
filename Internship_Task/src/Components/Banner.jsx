@@ -10,7 +10,7 @@ function Banner() {
    const [gstatus,setGstatus]=useState("Join Group");
   return (
     <>
-      <div className={`mt-20 max-md:mt-0 bg-cover bg-center bg-no-repeat w-full left-0 right-0 h-140 max-md:h-80 opacity-[0.89] `}  style={{
+      <div className={`mt-20 shadow-2xl shadow-black max-md:mt-0 bg-cover bg-center bg-no-repeat w-full left-0 right-0 h-140 max-md:h-80 opacity-[0.89] `}  style={{
               backgroundImage: `url(${assets.banner})`
           }} >
       <button onClick={()=>{ !token?navigate("/signin"):gstatus==="Join Group"?setGstatus("Leave Group"):setGstatus("Join Group")}} className='text-white border-2 border-white w-30 px-2 mt-6 py-2 min-md:hidden rounded-lg mx-[60%] font-semibold'  >{gstatus}</button>
